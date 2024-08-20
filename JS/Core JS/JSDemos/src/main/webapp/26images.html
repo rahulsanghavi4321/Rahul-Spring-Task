@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" id="i1" height="100px" width="100px">
+
+    <img src="i1.jpg" alt="" id="i2" height="100px" width="100px">
+
+    <img src="i1.jpg" alt="Empty" id="i3" height="400px" width="100%">
+
+    <button  id="b2">Get Image</button>
+    <button id="b1">Change</button>
+
+    <button id="b3">alternate</button>
+
+    <script>
+
+       im1= document.getElementById('i1')
+       im2= document.getElementById('i2')
+       im3= document.getElementById('i3')
+
+       btn1 = document.getElementById('b2')
+       btn2 = document.getElementById('b1')
+       btn3 = document.getElementById('b3')
+      
+    btn1.addEventListener("click", getImage)
+       function getImage()
+       {
+        im1.src ="i1.jpg"
+       }
+
+       btn2.addEventListener("click", getImage1)
+       function getImage1()
+       {
+        im2.src ="i2.jpg"
+       }
+
+       btn3.addEventListener("click", getImage2)
+       function getImage2()
+       {
+       console.log(im3.src);//http://127.0.0.1:5500/i2.jpg
+        if(im3.src.match("i1.jpg"))
+        {
+            im3.src ="i2.jpg"
+        }
+        else if(im3.src.match("i2.jpg"))
+        {
+            im3.src ="i3.jpg"
+        }
+        else if(im3.src.match("i3.jpg"))
+        {
+            im3.src ="i4.jpg"
+        }
+
+
+        else 
+        {
+            im3.src ="i1.jpg"
+        }
+
+        setTimeout('getImage2()',1000)
+       }
+
+       getImage2();
+
+    //  setInterval('getImage2()',1000)
+      
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="i1" onmouseenter="getText()" onmouseleave=" getText1()">HELlo</h1>
+     -->
+
+     <!-- <h1 id="i1" onmouseover="getText()" onmouseout=" getText1()">HELlo</h1>
+    
+    -->
+
+    <h1 id="i1" onpointerenter="getText()" onmouseleave=" getText1()">HELlo</h1>
+
+    <button ondblclick="getText()">test</button>
+    <script>
+
+        h1 = document.getElementById('i1')
+   
+        function getText()
+        {
+            h1.innerText ="Kartik"
+        }
+
+        function getText1()
+        {
+            h1.innerText ="Sid"
+        }
+        
+
+   </script>
+    
+</body>
+</html>

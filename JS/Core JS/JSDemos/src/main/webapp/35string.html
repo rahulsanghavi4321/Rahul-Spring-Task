@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    substring ==>
+    both values will be indexes
+     can not accept -ve index
+    slice ==>
+    both values will be indexes
+    can  accept -ve index
+    substr ==>
+
+    both values will not be indexes 
+
+    first = index 
+    second = length
+    can  accept -ve index -->
+
+    <script>
+        str = "Hi Hi Hi Hi Angel...!";
+
+        // document.write(str.length)
+        // document.write(str[2])
+
+        // document.write(str+"<br>");
+        // document.write(str.replace('Hi',"Nirmal")+"<br>")
+
+        // document.write(str.replaceAll('HI',"Nirmal")+"<br>")
+
+        // document.write(str.replace(/hI/i,"Nirmal")+"<br>")
+
+        // document.write(str.replace(/Hi/g,"Nirmal")+"<br>")
+
+        // document.write(str.replace(/hi/ig,"Nirmal")+"<br>")
+
+        str1 = "test web react";
+
+        arr1 = [23];
+
+        arr2= [13,4,-75];
+
+        // arr2.sort();
+
+        arr3 = arr1.concat(arr2)
+
+        // arr2.reverse();
+
+        document.write(arr2+"<br>")
+
+       console.log(arr3)
+
+
+        arr1.push('pataNahi',56,56)
+        arr1.pop();
+        arr1.pop();
+        document.write(arr1.join(" Spects ") + "<br>")
+
+        document.write(str1 + "<br>")
+        document.write(str1.charAt(0) +"<br>")
+
+
+        //  document.write(str1.substring(5) + "<br>")
+
+        //   document.write(str1.substring(-5) + "<br>")
+
+        //   document.write(str1.substring(2,7) + "<br>")
+
+        document.write(str1.substr(5) + "<br>")
+
+        document.write(str1.substr(-5) + "<br>")
+
+        document.write(str1.substr(2,7) + "<br>")
+
+        // document.write(str1.slice(2,7) + "<br>")
+
+        // document.write(str1.slice(5) + "<br>")
+
+        // document.write(str1.slice(-5) + "<br>")
+
+        // document.write(str1.slice(2,7) + "<br>")
+
+
+
+    </script>
+    
+</body>
+</html>

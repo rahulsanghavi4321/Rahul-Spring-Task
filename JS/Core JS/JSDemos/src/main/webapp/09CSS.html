@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .xyz 
+        {
+            height: 100px;
+            width: 100px;
+            background: lightcoral;
+        }
+
+        .y1 
+        {
+            font-size: 20px;
+        }
+       h2::after 
+       {
+        content: "Queen";
+       }
+
+       h2:hover::after 
+       {
+        content: "hi";
+       }
+    </style>
+  </head>
+  <body>
+
+    <h2></h2>
+
+    <h1 id="t1">HEllo</h1>
+    <script>
+
+        // var.style.prop = "val" ==> inline
+      var t123 = document.getElementById("t1");
+
+    //   t123.classList.add('xyz','y1')
+    // t123.setAttribute("class","xyz") 
+        // t123.className ="xyz y1"
+
+    //   t123.innerHTML = "kjhkj";
+    //   t123.style.color = "red";
+    //   t123.style.height = "100px";
+    //   t123.style.width = "200px";
+    //   t123.style.backgroundColor = "lightblue";
+    //   t123.style.fontSize = "50px";
+
+      console.log(t123)
+    </script>
+  </body>
+</html>

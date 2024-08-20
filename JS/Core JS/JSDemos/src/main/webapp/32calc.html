@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     Number  1 : <input type="text" id="n1"><br><br>
+     Number 2 : <input type="text" id="n2"><br><br>
+
+     Operator: <input type="text" id="op">
+
+     <button onclick="GetCalc()">Calc</button>
+
+     <h3 id="res"></h3>
+    <script>
+
+      num1=  document.getElementById('n1')
+      num2=  document.getElementById('n2')
+      op=  document.getElementById('op')
+      result=  document.getElementById('res')
+
+    //   console.log(num1,num2,op)
+
+      function GetCalc()
+      {
+        // console.log(num1.value)//1
+        // console.log(num2.value)//2
+        // console.log(op.value);//+ - * 
+
+        switch(op.value)
+        {
+            case "+" :result.innerHTML = "sum = " + (Number(num1.value)+ parseFloat(num2.value))
+            break;
+
+            case "-" :result.innerHTML =(Number(num1.value)- parseInt(num2.value))
+            break;
+
+            case "*" :result.innerHTML =(Number(num1.value)* Number(num2.value))
+            break;
+
+
+            case "/" :result.innerHTML =(Number(num1.value)/ Number(num2.value))
+            break;
+
+            case "%" :result.innerHTML =(Number(num1.value)% Number(num2.value))
+            break;
+        }
+
+     
+      }
+
+      
+    </script>
+    
+</body>
+</html>

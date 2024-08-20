@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="t1"></h1>
+
+    
+    <script>
+    // x=0;
+    // function test()
+    //     {
+    //       document.getElementById('t1').innerHTML = x++
+
+    //       if(x<=653)
+    //       {
+    //         setTimeout('test()',10)
+    //       }
+    //     }
+    // 
+   
+    //     test();
+
+
+
+    // x=0;
+    // function test()
+    //     {
+         
+    //       if(x<=653)
+    //       {
+    //         document.getElementById('t1').innerHTML = x++
+    //       }
+         
+    //     }
+    //     setInterval(test,10)
+
+    x=0;
+    function test()
+        {
+            document.getElementById('t1').innerHTML = x++
+         
+          if(x==653)
+          {
+           clearInterval(xyz)
+          }
+         
+        }
+      xyz =   setInterval(test,10)
+   
+       
+     
+    </script>
+</body>
+</html>

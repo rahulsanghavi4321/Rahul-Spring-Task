@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <input type="text" id="inp1" onkeypress="getInp()"> -->
+
+    <!-- <input type="text" id="inp1" onkeydown="getInp()"> -->
+
+    <!-- <input type="text" id="inp1" onkeyup="getInp()"> -->
+
+    <input type="text" id="inp1">
+    <textarea name=""cols="30" rows="10" id="txt"></textarea>
+
+    <button onclick="getInp()">Click</button>
+
+
+    <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore, magnam quod esse nulla ratione laudantium impedit doloremque eligendi optio asperiores vitae earum nesciunt quisquam odio fugit autem illum recusandae!
+    </h1>
+
+    <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore, magnam quod esse nulla ratione laudantium impedit doloremque eligendi optio asperiores vitae earum nesciunt quisquam odio fugit autem illum recusandae!
+    </h1>
+
+
+    v
+
+    <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore, magnam quod esse nulla ratione laudantium impedit doloremque eligendi optio asperiores vitae earum nesciunt quisquam odio fugit autem illum recusandae!
+    </h1>
+    <script>
+
+      t1 =  document.getElementById('inp1')
+       t2 = document.getElementById('txt')
+
+    //    window.addEventListener("resize",getInp)
+    //    window.addEventListener("load",getInp)
+
+    // window.addEventListener("unload",getInp)
+
+    window.addEventListener("scroll",getInp)
+    function getInp()
+    {
+        t2.innerHTML = t1.value
+    }
+
+
+    </script>
+    
+</body>
+</html>

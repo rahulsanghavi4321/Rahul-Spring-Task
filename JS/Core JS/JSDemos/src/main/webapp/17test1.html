@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz 
+        {
+            color:cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1 id="h1" onclick="getColor()">Heading 1</h1>
+
+    <p id="p1" ondblclick="getColor()">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium qui eaque magni praesentium mollitia! Ipsam hic ut aperiam enim reprehenderit tempora maiores repellat, excepturi, ducimus qui animi incidunt cupiditate optio!
+    </p>
+
+    <input id="inp1" type="text" onkeydown="getColor()">
+
+    <a id="a1" href="test.html">TEst</a>
+
+    <img id="i1" src="xyz.jpg" alt="">
+
+    <script>
+      h1=  document.getElementById('h1')
+      p =  document.getElementById('p1')
+      inp =  document.getElementById('inp1')
+      anc =  document.getElementById('a1')
+       img =  document.getElementById('i1')
+   
+   
+       console.log(h1,p,inp,anc,img)
+
+    //    h1.classList.add("xyz")
+
+    // h1.className = "xyz";
+
+        // h1.setAttribute("class","xyz")
+
+       function getColor()
+       {
+        h1.style.color ="pink"
+       }
+       
+
+    //    p.innerHTML ="dfkghj"
+
+    //    alert( p.innerHTML)
+
+    //    h1.innerHTML ="123";
+    //    p.innerText ="para"
+    //    anc.innerHTML ="Queen"
+    //    anc.href ="ankit"
+
+    inp.value =  anc.href 
+
+   
+
+
+   </script>
+    
+</body>
+</html>

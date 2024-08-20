@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .x {
+        height: 20px;
+        width: 20px;
+        background: #000;
+        position: absolute;
+        top:-10px;
+        left:-10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x"></div>
+    <!-- <button id="b1">CLICK</button> -->
+
+    <script>
+      d1 = document.querySelector(".x");
+      btn1 = document.getElementById("b1");
+
+      window.addEventListener("mousemove", moveMe);
+      function moveMe(e) {
+
+        // console.log(e.clientX);//58+ "px"  58px
+        // console.log(e.clientY);//67
+        d1.style.marginLeft = e.clientX+"px";
+        d1.style.marginTop = e.clientY+"px";
+      }
+
+    // btn1.addEventListener("click",  function moveMe() {
+    //     d1.style.marginLeft = "100px";
+    //     d1.style.marginTop = "100px";
+    //   });
+
+    // btn1.addEventListener("click",  function () {
+    //     d1.style.marginLeft = "100px";
+    //     d1.style.marginTop = "100px";
+    //   });
+     
+
+    // btn1.addEventListener("click",   ()=> {
+    //     d1.style.marginLeft = "100px";
+    //     d1.style.marginTop = "100px";
+    //   });
+    </script>
+  </body>
+</html>

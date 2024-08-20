@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .xyz 
+        {
+            animation: test 1s;
+        }
+
+        @keyframes test {
+            from {
+                transform: translate(-100%,0);
+            }
+            to{
+                transform: translate(0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <inpuT tyPe="text" required=""/> -->
+
+    <p class="para" id="para1" name=""xyz>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eius? Quisquam dolorem labore iste non autem, vitae laudantium sapiente libero nihil nulla in vel numquam eligendi doloribus incidunt atque doloremque.
+    </p>
+
+    <p class="para" id="para1" name=""xyz>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eius? Quisquam dolorem labore iste non autem, vitae laudantium sapiente libero nihil nulla in vel numquam eligendi doloribus incidunt atque doloremque.
+    </p>
+
+    <p class="para" id="para1" name=""xyz>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eius? Quisquam dolorem labore iste non autem, vitae laudantium sapiente libero nihil nulla in vel numquam eligendi doloribus incidunt atque doloremque.
+    </p>
+
+    <p class="para" id="para1" name=""xyz>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eius? Quisquam dolorem labore iste non autem, vitae laudantium sapiente libero nihil nulla in vel numquam eligendi doloribus incidunt atque doloremque.
+    </p>
+
+    <p class="para" id="para1" name=""xyz>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eius? Quisquam dolorem labore iste non autem, vitae laudantium sapiente libero nihil nulla in vel numquam eligendi doloribus incidunt atque doloremque.
+    </p>
+
+    <p class="para" id="para1" name=""xyz>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eius? Quisquam dolorem labore iste non autem, vitae laudantium sapiente libero nihil nulla in vel numquam eligendi doloribus incidunt atque doloremque.
+    </p>
+
+    <p class="para" id="para1" name=""xyz>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eius? Quisquam dolorem labore iste non autem, vitae laudantium sapiente libero nihil nulla in vel numquam eligendi doloribus incidunt atque doloremque.
+    </p>
+
+    <p class="para" id="para1" name=""xyz>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eius? Quisquam dolorem labore iste non autem, vitae laudantium sapiente libero nihil nulla in vel numquam eligendi doloribus incidunt atque doloremque.
+    </p>
+    <script>
+
+    p_arr =  document.querySelectorAll('.para');
+    console.log(p_arr);
+
+    // p_arr[0].style.background = "lightblue"
+    // p_arr[1].style.background = "lightblue"
+    // p_arr[2].style.background = "lightblue"
+    // p_arr[3].style.background = "lightblue"
+
+    for(i=0;i<p_arr.length;i++)
+    {
+      
+       if(i%2==0)
+       {
+        p_arr[i].style.background = "lightblue"
+        p_arr[i].className ="xyz"
+       }
+       else 
+       {
+        p_arr[i].style.background = "lightcoral"
+       }
+    }
+
+
+        arr = [
+            1,
+            "hi",
+            true,
+            [
+                34,
+                56,
+                {name:"harsh"}
+            ]];
+
+        document.write(arr[3][2].name);
+
+        // function test(x)
+        // {
+        //     return function(y){
+        //         return function(z)
+        //         {
+        //             console.log(x,y,z)
+        //         }
+
+        //     }
+        // }
+
+        // js currying 
+        // hoisting
+        // xml
+        // strict mode 
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    name : <input type="text" id="i1" onblur="ValidateForm(i1,nmErr)">
+    <span id="nmErr"></span>
+    <br>
+
+    email: <input type="text" id="i2" onblur="ValidateForm(i2,emErr)">
+    <span id="emErr"></span>
+    <br>
+
+    
+
+    <script>
+        // x = 12 
+        // y = 34
+
+        // function test(x,y)
+        // {
+
+        // }
+        // test(12,56)
+        // test(1.2)
+        // test("hi")
+
+
+        // email = document.getElementById('i2')
+        // username = document.getElementById('i1')
+
+        // ValidateForm(1,2)
+        // ValidateForm(34,56)
+        function ValidateForm(x,y)
+        {
+
+            // console.log(x)
+            // console.log(y)
+            if(x.value == "")
+            {
+                // alert("Required??")
+
+                y.innerHTML = "* Required...!";
+                x.style.border ="2px solid red"
+                y.style.color ="red"
+                return false;
+            }
+
+            else 
+            {
+                y.innerHTML = ""
+                x.style.border ="2px solid green"
+            }
+
+          
+        }
+    </script>
+    
+</body>
+</html>
